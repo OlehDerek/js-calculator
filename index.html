@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ios calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="numbers">
+        <input type="text" id="display" disabled>
+      </div>
+        <div class="top-left-section">
+          <button onclick="clearDisplay()" value="C" class="top-left-section-button">C</button>
+          <button class="top-left-section-button">&#x2b;/&#x2212;</button>
+          <button onclick="addToDisplay('%')" value="%" class="top-left-section-button">%</button>
+
+          <div class="middle-section">
+            <button onclick="addToDisplay('1')" value="1" class="button">1</button>
+            <button onclick="addToDisplay('2')" value="2" class="button">2</button>
+            <button onclick="addToDisplay('3')" value="3" class="button">3</button>
+            <button onclick="addToDisplay('4')" value="4" class="button">4</button>
+            <button onclick="addToDisplay('5')" value="5" class="button">5</button>
+            <button onclick="addToDisplay('6')" value="6" class="button">6</button>
+            <button onclick="addToDisplay('7')" value="7" class="button">7</button>
+            <button onclick="addToDisplay('8')" value="8" class="button">8</button>
+            <button onclick="addToDisplay('9')" value="9" class="button">9</button>
+            <button onclick="addToDisplay('0')" value="0" class="button-0">0</button>
+            <button onclick="addToDisplay('.')" value="." class="button-dot">.</button>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <button onclick="addToDisplay('/')" class="right-section-button">&#xf7;</button>
+          <button onclick="addToDisplay('*')" class="right-section-button">&#xd7;</button>
+          <button onclick="addToDisplay('-')" class="right-section-button">&#x2212;</button>
+          <button onclick="addToDisplay('+')" class="right-section-button">&#x2b;</button>
+          <button onclick="calculateResult('=')" class="right-section-button">&#x3d;</button>
+        </div>
+    </div>
+  </body>
+</html>
