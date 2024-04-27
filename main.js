@@ -11,9 +11,6 @@ function calculateResult() {
   var displayValue = document.getElementById('display').value;
   var result;
   var match = displayValue.match(/([\d.]+)([*/+-])([\d.]+)/);
-// make that erase zero
-// no double dots
-// more digits in display
 
   if (match) {
       var operand1 = parseFloat(match[1]);
