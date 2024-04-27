@@ -6,11 +6,6 @@ function clearDisplay() {
 function addToDisplay(value) {
     document.getElementById('display').value += value;
 }
-var op = operand1.toString();
-
-if (op.length > 1 && op[1]!= ".") {
-  op.shift();
-}
 
 function calculateResult() {
   var displayValue = document.getElementById('display').value;
@@ -22,6 +17,11 @@ function calculateResult() {
 
   if (match) {
       var operand1 = parseFloat(match[1]);
+    var op = operand1.toString();
+
+    if (op.length > 1 && op[1]!= ".") {
+      op.shift();
+    }
       var operator = (match[2]);
       var operand2 = parseFloat(match[3]);
 
